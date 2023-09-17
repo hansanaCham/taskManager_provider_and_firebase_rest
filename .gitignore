@@ -43,3 +43,4 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 task-manager-fb14b-firebase-adminsdk-xwive-27c40bcec7.json
+.env
