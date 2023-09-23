@@ -1,5 +1,5 @@
 class Task {
-  int id = 0;
+  String id = '';
   final String name;
   final String description;
   final String status;

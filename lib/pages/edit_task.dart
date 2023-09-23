@@ -17,7 +17,7 @@ class _EditTaskState extends State<EditTask> {
   late String taskName;
   late String description;
   late String status;
-  late int id;
+  late String id;
 
   @override
   void didChangeDependencies() {

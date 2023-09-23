@@ -1,9 +1,10 @@
 import 'package:sqflite/sqflite.dart';
 
 import '../helpers/database_helper.dart';
+import '../interfaces/i_task_interface.dart';
 import '../models/task.dart';
 
-class TaskRepository {
+class TaskRepository implements ITaskRepository {
   final DatabaseHelper _databaseHelper = DatabaseHelper.instance;
 
   TaskRepository() {}
@@ -43,7 +44,7 @@ class TaskRepository {
     );
   }
 
-  Future<void> deleteTask(int taskId) async {
+  Future<void> deleteTask(String taskId) async {
     final db = await _databaseHelper.db;
     await db.delete(
       'task',
