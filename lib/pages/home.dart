@@ -1,14 +1,9 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:task_manager/providers/task_provider.dart';
 
-import '../helpers/firebase_helper.dart';
 import '../widgets/appbar.dart';
 import '../widgets/task_list.dart';
-import 'package:http/http.dart' as http;
 
 class Home extends StatefulWidget {
   Home({super.key});

@@ -1,10 +1,8 @@
 import 'dart:collection';
 import 'package:flutter/material.dart';
-import 'package:task_manager/helpers/database_helper.dart';
 import 'package:task_manager/models/task.dart';
 
 import '../Repositories/api_task_repository.dart';
-import '../Repositories/task_repository.dart';
 import '../interfaces/i_task_interface.dart';
 
 class TaskProvider extends ChangeNotifier {
